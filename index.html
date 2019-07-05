@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<style>
+h1 { 
+  display: block;
+  font-size: 3em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 2;
+  margin-right: 2;
+  font-weight: bold;
+  background-color: black;
+}
+
+h2 { 
+  display: block;
+  font-size: 3em;
+  margin-top: -1em;
+  margin-bottom: 0em;
+  margin-left: 2;
+  margin-right: 2;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150;
+  margin-left: 150
+}
+
+</style>
+<h1 align="center" style="color:white;"> Andrew T. Francis </h1>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -14,61 +47,182 @@ body, html {
 
 /* Style tab links */
 .tablink {
+  /*Tab color*/
   background-color: #555;
+  
+ /*Color of font on tabs*/
   color: white;
-  float: left;
+  
+  /*Affect arrangement of tabs*/
+  float: right;
+  
+  /*Creates line breaks between tabs*/
   border: line;
-  outline: none;
+  
+  outline: line;
   cursor: pointer;
+  
+  /*Controls Height of tabs*/
   padding: 14px 16px;
+  
+  
   font-size: 17px;
-  width: 25%;
+  
+  /*Controls how the tabs span the page*/
+  width: 20%;
 }
 
 .tablink:hover {
-  background-color:#C0C0C0;
+  background-color:#555;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  color: #C0C0C0;
   display: none;
-  padding: 100px 20px;
+  
+  /*Controls how far intial text is from tabs*/
+  padding: 45px 20px;
   height: 100%;
 }
 
-#Home {background-color: red;}
+/*Controls the backround colors on pages of the tabs*/
+#Home {background-color: #FCFAFA;}
 #News {background-color: #FCFAFA;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
+#Contact {background-color: #FCFAFA;}
+#About {background-color: #FCFAFA;}
 </style>
 </head>
 <body>
 
-<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
-<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
 
-<div id="Home" class="tabcontent">
-  <h3>Home</h3>
-  <p>Home is where the heart is..</p>
+
+<button class="tablink" onclick="openPage('Project Posts', this, 'green')"> Project Posts </button>
+
+<button class="tablink" onclick="openPage('Resume', this, 'green')"> Resume </button>
+
+<button class="tablink" onclick="openPage('Pictures', this, 'green')"> Pictures </button>
+
+<button class="tablink" onclick="openPage('Contact', this, 'green')">Contact</button>
+
+<button class="tablink" onclick="openPage('About Me', this, 'green')" id="defaultOpen"> About Me </button>
+
+
+<div id="About Me" class="tabcontent" margin-right:150px; margin-left: 80px; >
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 110px;
+  left: 10px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2196F3;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#overview">Overview</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
 </div>
 
-<div id="News" class="tabcontent">
+<div class="main">
+
+<div id="overview">
+
+  <h2 align="left" style="color:black"> Overview </h2>
+
+  <p  style="color:black">
+ 
+  
+  	Andrew is an avid problem solver dedicated to addressing important environmental issues related to water, waste, and agriculture. During his formative years, Andrew held positions at the US Environmental Protection Agency researching water quality in pipe distribution networks, and at BiOWiSH Technologies. BiOWiSH allowed Andrew to model the impacts of differing soil microbiomes on agricultural yields and carved out the path for him to become a data scientist. At BiOWiSH, Andrew informed senior level management about his predictions regarding the potential size and importance markets across the globe using agricultural production datasets. Andrew’s desire to become a data scientist was inspired at BiOWiSH because it connected the three fields that he is most passionate about: engineering, environmental science, and microbiology. 
+
+<br></br>
+
+Andrew is also the vice president of Resilient Communities, a nonprofit organization developing waste to energy technologies in impoverished communities around the world. The organization is currently pursuing a research project in Marrakech, Morocco aimed at developing technology to recover methane from wastewater and provide it to a nearby community. He also headed a team that design a methane capture device for a wastewater treatment lagoon. 
+
+<br></br>
+
+When Andrew is not trying to save the world, he enjoys baking sourdough bread using his home-grown yeast culture. He also enjoys cooking and tinkering with Indian food recipes inspired by his various excursions to the country. Andrew can be found pedaling his bicycle around town hunting for the best coffee beans to take home to his French press. He may also be spotted tending to his herb garden trying to harvest the best herbs to bake his next loaf of bread.
+ </p> 
+   <br></br>
+   <br></br>
+   <br></br>
+</div>
+
+
+
+<div id="services">
+<h2> Test </h2>
+</div?
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div id="Project Posts" class="tabcontent">
   <h3>News</h3>
   <p>Some news this fine day!</p> 
 </div>
 
-<div id="Contact" class="tabcontent">
+<div id="Resume" class="tabcontent">
   <h3>Contact</h3>
   <p>Get in touch, or swing by for a cup of coffee.</p>
 </div>
 
-<div id="About" class="tabcontent">
+<div id="Pictures" class="tabcontent">
   <h3>About</h3>
   <p>Who we are and what we do.</p>
 </div>
+
+<div id="Contact" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+
 
 <script>
 function openPage(pageName,elmnt,color) {
